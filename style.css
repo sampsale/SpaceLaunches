@@ -10,25 +10,33 @@
 body {
   background: #02091f;
 }
-h2{
+h2, #color{
   color:#5f79cc
 }
 h1{
   color:#091a50;
 }
-table h1, p{
-  
-}
+
 p, h5{
   color: white
 }
 h5{
   margin-top:15px
 }
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .tableimage {
   height: 15vh;
   width: 15vw;
+  } .img{
+    display:none
+  } p, h1, h2, h3, h4, h5  {
+    padding-left: 10px
+  } #map {
+    margin-left: 20px;
+    width: 50%;
+    height:20%
+  } .searchImage{
+    display:none
   }
  }
 img{
