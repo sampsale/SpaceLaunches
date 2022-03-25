@@ -14,7 +14,7 @@ h2, #color{
   color:#5f79cc
 }
 h1{
-  color:#091a50;
+  color:#1f1e77;
 }
 
 p, h5{
@@ -44,12 +44,35 @@ img{
   width:25vw;
 }
 *{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
 }
 #map {
   margin-top:10px;
+  margin-bottom:10px;
   height: 50vh;
   /* The height is 400 pixels */
   width: 65vw;
   /* The width is the width of the web page */
+}
+
+@media (min-width: 977px){
+  .navbar ul{
+    margin-left: 2em
+  }
+  .navbar li {
+      margin-left : 5em;
+      margin-right : 5em;
+  }
+}
+.navbar .navbar-collapse .mr-auto {
+  display: flex!important;
+  justify-content: space-around;
+  }
+.mr-auto{
+  flex:1
+}
+.navbar, .footer {
+  background-color: rgb(18, 85, 143)
 }

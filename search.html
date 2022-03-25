@@ -23,11 +23,11 @@
   background-image: url('images/main.jpg');
   height: 15vh;
 ">
-    <h1>Upcoming Space Launches</h1>
-    <p>Find upcoming launches and more here</p>
+    <h1><b>Upcoming Space Launches</b></h1>
+    <p>Find upcoming launches and more</p>
   </div>
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-sm navbar-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
       aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -76,18 +76,41 @@
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Spacecraft" id="spacecraft" aria-describedby="basic-addon2">
         </div>
-        <button type="button" class="btn btn-primary"  onClick="searchSpacecraft()">Search</button>
+        <button type="button" class="btn btn-primary" id="spacecraftbutton"  onClick="searchSpacecraft()">Search</button>
         <div  class="container mt-4 ml-0 mr-0 p-0" id="spacecrafttable"></div>
       </div>
     </div>
+      
     
-    
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Astronauts</h2>
+        <h5>Who has been to space?</h5>
+        <p>Find all astronauts and their data</p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Astronaut" id="astronaut" aria-describedby="basic-addon2">
+        </div>
+        <button type="button" class="btn btn-primary" onClick="searchAstronaut()">Search</button>
+        <div  class="container mt-4 ml-0 mr-0 p-0" id="astronauts"></div>
+      </div>
+      <div class="col-sm-6">
+        <h2>Launch sites</h2>
+        <h5>Where are they launched from?</h5>
+        <p>Find all launch sites</p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Location" id="location" aria-describedby="basic-addon2">
+        </div>
+        <button type="button" class="btn btn-primary"  onClick="searchLocation()">Search</button>
+        <div  class="container mt-4 ml-0 mr-0 p-0" id="locations"></div>
+      </div>
+    </div>
+      
   </div>
   
  
-  <div class="mt-2 p-2 mt-1 bg-dark text-white text-center">
+  <div class="footer mt-2 p-2 mt-1  text-white text-center">
     <p>Please note that the APIs used are in free of charge development mode and therefore the information might not
-      reflect the actual situation launches</p>
+      reflect the actual situation</p>
   </div>
 
 </body>

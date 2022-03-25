@@ -6,6 +6,7 @@ fetch(`http://api.open-notify.org/iss-now.json`, { mode: 'cors' })
     })
     .then(function (responseJson) {
         data = responseJson;
+        console.log(data)
         initMap(data.iss_position)
     })
     .catch(function (error) {
@@ -15,6 +16,7 @@ fetch(`http://api.open-notify.org/iss-now.json`, { mode: 'cors' })
 
 
 function initMap(location) {
+    console.log(location)
     const iss = { lat: parseInt(location.latitude), lng: parseInt(location.longitude) };
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 3,
